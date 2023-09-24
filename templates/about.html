@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="title" content="Woman in Pink">
+      <meta property="fb:app_id" content="312" />
+      <meta property="og:type" content="Woman in Pink" />
+      <meta property="og:url" content="https://womaninpink.herokuapp.com/" />
+      <meta property="og:title" content="Woman in Pink">
+      <meta property="og:image" content="https://womaninpink.herokuapp.com/static/assets/image/hp1.png">
+      <meta property="og:description" content="Woman in Pink">
+      <meta name="full-screen" content="yes">
+      <meta name="theme-color" content="#269bef ">
+      <!-- Responsive -->
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+      <title>About | Breast Cancer Awareness</title>
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='assets/css/bootstrap.min.css') }}">
+   <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='assets/css/style.css') }}">
+   <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='assets/fonts/font/flaticon.css') }}">
+      <!---------favicon--------------->
+      <link rel="icon" type="image/png" href="{{ url_for('static',filename='assets/image/hp1.png') }}" sizes="32x32">
+      <link rel="icon" type="image/png" href="{{ url_for('static',filename='assets/image/hp1.png') }}" sizes="16x16">
+      <!---------favicon--------------->
+   </head>
+   <body class="home_page_one">
+      <div class="page_wapper">
+         <!--Start Preloader-->
+         <div class="preloader">
+            <div class="preloader_box">
+               <div class="loader">
+                  <img src="{{ url_for('static',filename='assets/image/loader/2.gif') }}">
+               </div>
+            </div>
+         </div>
+         <!--End Preloader -->
+         <!--Header-->
+         <header class="header_v2">
+            {% include 'main/header.html' %}
+         </header>
+         <!--Header-->
+         <!------main-content------>
+         <main class="main-content">
+            <section class="page_title">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-lg-12 d-flex">
+                        <div class="content_box">
+                           <ul class="bread_crumb text-center">
+                              <li class="bread_crumb-item"><a href="#">Home</a></li>
+                              <li class="bread_crumb-item active"> About Breast Cancer</li>
+                           </ul>
+                           <h1>About Breast Cancer</h1>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section class="about type_one">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-lg-6">
+                        <div class="heading icon_dark tp_one">
+                           <h6>about Breast Cancer</h6>
+                           <h1>Breast Cancer 2020</h1>
+                        </div>
+                        <div class="about_content">
+                           <p class="description">Breast cancer occurs when cells in the breast divide and grow without their normal control. All women – and some men – are at risk for breast cancer. This risk increases with age. Now is the time to know what to look for and what you need to do to take control of your health.
+
+                           </p>
+                           <div class="symptoms">
+                              <h2>Learn the symptoms.</h2>
+                              <div class="row">
+                                 <div class="col-lg-6">
+                                    <ul>
+                                       <li>
+                                          <span class="flaticon-check"></span>
+                                          <p>A new lump in the breast or underarm</p>
+                                       </li>
+                                       <li>
+                                          <span class="flaticon-check"></span>
+                                          <p>Pain in any area of the breast</p>
+                                       </li>
+                                       <li>
+                                          <span class="flaticon-check"></span>
+                                          <p>Swelling of part of the breast </p>
+                                       </li>
+                                       <li>
+                                          <span class="flaticon-check"></span>
+                                          <p>Irritation or dimpling of breast skin</p>
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <div class="col-lg-6">
+                                    <ul>
+                                       <li>
+                                          <span class="flaticon-check"></span>
+                                          <p>Redness or flaky skin in the nipple area or the breast</p>
+                                       </li>
+                                       <li>
+                                          <span class="flaticon-check"></span>
+                                          <p>Nipple discharge other than breast milk, including blood</p>
+                                       </li>
+                                       <li>
+                                          <span class="flaticon-check"></span>
+                                          <p>Any change in the size or the shape of the breast </p>
+                                       </li>
+                                    </ul>
+                                 </div>
+
+                                 <div class="form-group">
+                                    <div align="text-center">
+                                 <a href="/types" class="theme_btn tp_two">Types</a>
+                                    <a href="/stages" class="theme_btn tp_two">Stages</a>
+                                 </div>
+                                    </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                  </div>
+               </div>
+            </section>
+
+            <section class="doctor type_one bg_white">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-lg-12 ">
+                        <div class="heading   tp_one">
+                           <h1>Symptoms</h1>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-lg-12 padding_zero">
+                        <div class="owl-carousel three_items">
+                           <div class="doctor_box type_one ">
+                              <div class="image_box">
+                                 <img src="{{ url_for('static',filename='assets/image/symptoms/breast-cancer-infographic-vector-22319678 (3rd copy).jpg') }}" class="img-fluid" alt="best-doctors" />
+                              </div>
+                           </div>
+                           <div class="doctor_box type_one ">
+                              <div class="image_box">
+                                 <img src="{{ url_for('static',filename='assets/image/symptoms/breast-cancer-infographic-vector-22319678.jpg') }}" class="img-fluid" alt="best-doctors" />
+                              </div>
+                           </div>
+                           <div class="doctor_box type_one">
+                              <div class="image_box">
+                                 <img src="{{ url_for('static',filename='assets/image/symptoms/breast-cancer-infographic-vector-22319678 (copy).jpg') }}" class="img-fluid" alt="best-doctors" />
+                              </div>
+                           </div>
+                           <div class="doctor_box type_one">
+                              <div class="image_box">
+                                 <img src="{{ url_for('static',filename='assets/image/symptoms/breast-cancer-infographic-vector-22319678 (another copy).jpg') }}" class="img-fluid" alt="best-doctors" />
+                              </div>
+                           </div>
+                           <div class="doctor_box type_one">
+                              <div class="image_box">
+                                 <img src="{{ url_for('static',filename='assets/image/symptoms/breast-cancer-infographic-vector-22319678 (4th copy).jpg') }}" class="img-fluid" alt="best-doctors" />
+                              </div>
+                           </div>
+                           <div class="doctor_box type_one">
+                              <div class="image_box">
+                                 <img src="{{ url_for('static',filename='assets/image/symptoms/breast-cancer-infographic-vector-22319678 (5th copy).jpg') }}" class="img-fluid" alt="best-doctors" />
+                              </div>
+                           </div>
+                           <div class="doctor_box type_one">
+                              <div class="image_box">
+                                 <img src="{{ url_for('static',filename='assets/image/symptoms/breast-cancer-infographic-vector-22319678 (6th copy).jpg') }}" class="img-fluid" alt="best-doctors" />
+                              </div>
+                           </div>
+                           <div class="doctor_box type_one">
+                              <div class="image_box">
+                                 <img src="{{ url_for('static',filename='assets/image/symptoms/breast-cancer-infographic-vector-22319678 (7th copy).jpg') }}" class="img-fluid" alt="best-doctors" />
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+
+            {% include 'main/footer.html' %}
+            <!-------------main-centent-end--------------->
+         </main>
+         <!-------------pagewapper-end--------------->
+      </div>
+      <!--Scroll to top-->
+      <a href="# " id="scroll" class="default-bg " style="display: inline;"><span class="fa fa-angle-up "></span></a>
+      <!---------mbile-navbar----->
+      <div class="bsnav-mobile ">
+         <div class="bsnav-mobile-overlay"></div>
+         <div class="navbar ">
+            <button class="navbar-toggler toggler-spring mobile-toggler"><span class="fa fa-close "></span></button>
+         </div>
+      </div>
+      <!---------mbile-navbar----->
+      <!-- /.side-menu__block -->
+      {% include 'main/sidebar.html' %}
+      <!-- /.side-menu__block -->
+      <!-- /.search-popup -->
+      <div class="search-popup">
+         <div class="search-popup__overlay custom-cursor__overlay">
+            <div class="cursor "></div>
+            <div class="cursor-follower "></div>
+         </div>
+         <!-- /.search-popup__overlay -->
+         <div class="search-popup__inner ">
+            <form action="# " class="search-popup__form ">
+               <input type="text" name="search" placeholder="Type here to Search.... ">
+               <button type="submit"><i class="flaticon-magnifying-glass "></i></button>
+            </form>
+         </div>
+         <!-- /.search-popup__inner -->
+      </div>
+      <!-- /.search-popup -->
+      <!-----------------------------------script-------------------------------------->
+      <script src="{{ url_for('static',filename='assets/js/jquery.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/popper.min.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/bootstrap.min.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/bsnav.min.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/jquery-ui.js') }}"></script>
+
+      <script src="{{ url_for('static',filename='assets/js/owl.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/wow.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/jquery.fancybox.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/TweenMax.min.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/validator.min.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/appear.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/moment.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/jquery.flexslider-min.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/pagenav.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/custom.js') }}"></script>
+   </body>
+</html>

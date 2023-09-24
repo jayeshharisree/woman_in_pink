@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="title" content="Woman in Pink">
+      <meta property="fb:app_id" content="312" />
+      <meta property="og:type" content="Woman in Pink" />
+      <meta property="og:url" content="https://womaninpink.herokuapp.com/" />
+      <meta property="og:title" content="Woman in Pink">
+      <meta property="og:image" content="https://womaninpink.herokuapp.com/static/assets/image/hp1.png">
+      <meta property="og:description" content="Woman in Pink">
+      <meta name="full-screen" content="yes">
+      <meta name="theme-color" content="#269bef ">
+      <!-- Responsive -->
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+      <title>Stages | Breast Cancer Awareness</title>
+      <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='assets/css/bootstrap.min.css') }}">
+   <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='assets/css/style.css') }}">
+   <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='assets/fonts/font/flaticon.css') }}">
+      <!---------favicon--------------->
+      <link rel="icon" type="image/png" href="{{ url_for('static',filename='assets/image/hp1.png') }}" sizes="32x32">
+      <link rel="icon" type="image/png" href="{{ url_for('static',filename='assets/image/hp1.png') }}" sizes="16x16">
+      <!---------favicon--------------->
+   </head>
+   <body class="home_page_one">
+      <div class="page_wapper">
+         <!--Start Preloader-->
+         <div class="preloader">
+            <div class="preloader_box">
+               <div class="loader">
+                  <img src="{{ url_for('static',filename='assets/image/loader/2.gif') }}">
+               </div>
+            </div>
+         </div>
+         <!--End Preloader-->
+         <!--Header-->
+         <header class="header_v2">
+            {% include 'main/header.html' %}
+         </header>
+         <!--Header-->
+         <!------main-content------>
+         <main class="main-content">
+            <section class="page_title">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-lg-12 d-flex">
+                        <div class="content_box">
+                           <ul class="bread_crumb text-center">
+                              <li class="bread_crumb-item"><a href="#">Home</a></li>
+                              <li class="bread_crumb-item active">Breast Cancer Staging</li>
+                           </ul>
+                           <h1>Breast Cancer Staging</h1>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <div class="single_blog_box">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <!--------list-of categories-------->
+                        <div class="blog_details_content">
+                           <div class="image_box">
+                              <div class="row">
+                                 <div class="col-lg-12">
+                                    <div class="owl-carousel one_items">
+                                       <div class="image">
+                                          <img src="{{ url_for('static',filename='assets/image/blog2.jpg') }}" class="img-fluid" alt="img" />
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <h2 class="heading">Breast Cancer Staging</h2>
+                           <p class="description">
+                              Cancer staging is used to determine the extent of cancer in your body and where it is located. It is based on the amount of the original (primary) tumor and the location of spread of the tumor. The staging system is also a convenient, standardized way for your doctors to communicate information about your cancer.
+                           </p><br>
+                           <p>
+                           Early Stages: Stage 0, Stage I, Stage II, and some Stage III cancers Late Stages: Some Stage III and Stage IV
+                           </p><br>
+                           <div class="content_box">
+                              <p><strong><u>Stage 0 breast cancer</u></strong></p>
+                              <p class="description">
+                              Stage 0 breast cancer describes non-invasive cancers, such as Ductal Carcinoma in Situ (DCIS) and Lobular Carcinoma in Situ (LCIS). In Stage 0, there is no evidence that the cancer cells have spread from where they originated. In other words, there is no evidence of cancer cells in the neighboring normal breast tissue or in other parts of the body.
+                              </p><br>
+                              <p><strong><u>Stage 1 breast cancer</u></strong></p>
+                              <p class="description">
+                              Stage 1 breast cancer describes an invasive cancer that has formed a tumor of size 2 cm or less. Stage 1 is divided into two subcategories.
+                              <br><br>
+                              <strong>Stage IA</strong>: Cancer cells have not spread to any lymph nodes or other sites in the body.<br>
+                              <strong>Stage IB</strong>: 1 to 3 axillary (or, underarm) lymph nodes contain micrometastases (small tumors between 0.2 mm and 2 mm), but the cancer has not spread to distant sites in the body.<br>
+                               </p><br>
+                           </div>
+
+                           <div class="content_box">
+                              <p><strong><u>Stage 2 breast cancer</u></strong></p>
+                              <p class="description">
+
+                              Stage 2 breast cancer is divided into two subcategories:<br><br>
+
+                              <strong>Stage IIA</strong>: Stage IIA describes one of the following conditions:
+                              The tumor size is 2 cm or less. The cancer has spread to 1 to 3 axillary lymph nodes, and the tumor(s) in the lymph nodes measure greater than 2 mm. The primary tumor is 2 cm or less. There is evidence of a small amount of cancer in the breast lymph nodes. The primary tumor is 2 cm or less. The cancer has spread to 1 to 3 axillary lymph nodes and to lymph nodes in the breast. The primary tumor is between 2 cm and 5 cm. The cancer has not spread to the lymph nodes.<br><br>
+
+                              <strong>Stage IIB</strong>: Stage IIB describes one of the following conditions:<br><br>
+                              The primary tumor is between 2 cm and 5 cm. Cancer has spread to 1 to 3 axillary lymph nodes and/or small amounts of cancer have been found in lymph nodes in the breast. The tumor is greater than 5 cm. The tumor has not grown into the chest wall or surrounding skin. The cancer has not spread to any lymph nodes.
+
+                              </p><br>
+                              <p><strong><u>Stage 3 breast cancer</u></strong></p>
+                              <p class="description">
+                              Stage 3 breast cancer is divided into three subcategories:<br><br>
+
+                              <strong>Stage IIIA</strong>: Stage IIIA describes one of the following conditions:<br><br>
+                              The tumor is 5 cm or less and the cancer has spread to 4 to 9 axillary lymph nodes, or there is evidence of cancer in lymph nodes of the breast. The tumor is greater than 5 cm and it has not grown into the chest wall or surrounding skin. The cancer has spread to 4 to 9 axillary lymph nodes, or to lymph nodes in the breast.
+                              <br><br>
+                              <strong>Stage IIIB</strong>: Stage IIIB describes one of the following conditions:<br><br>
+                              The tumor has grown into the chest wall or skin, but the cancer has not spread to the lymph nodes. The tumor has grown into the chest wall or skin and the cancer has spread to 1 to 3 axillary lymph nodes, and/or small amounts of cancer have been found in lymph nodes in the breast. The tumor has grown into the chest wall or skin. The cancer has spread to 4 to 9 axillary lymph nodes, or has spread to lymph nodes within the breast. <br><br>
+
+                              <strong>Stage IIIC</strong>: Stage IIIC describes one of the following conditions:<br><br>
+
+                              The tumor is any size and the cancer has spread to 10 or more axillary lymph nodes. The tumor is any size and the cancer has spread to lymph nodes beneath the collar bone. The tumor is any size and the cancer has spread to lymph nodes above the collar bone. The tumor is any size and the cancer has spread to the axillary lymph nodes and to lymph nodes within the breast. The tumor is any size. The cancer has spread to 4 or more axillary lymph nodes and small amounts of cancer have been found in lymph nodes within the breast.
+
+                              </p><br>
+                           </div>
+
+                           <div class="content_box">
+                              <p><strong><u>Stage 4 breast cancer</u></strong></p>
+                              <p class="description">
+                           Stage 4 breast cancer describes a cancer of any size that has spread to other organs in the body or to lymph nodes that are far from the breast. The most common organs that Stage 4 breast cancer spreads to are the bones, lungs, liver, and brain.                              </p><br>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            {% include 'main/footer.html' %}
+            <!-------------main-centent-end--------------->
+         </main>
+         <!-------------pagewapper-end--------------->
+      </div>
+      <!--Scroll to top-->
+      <a href="# " id="scroll" class="default-bg " style="display: inline;"><span class="fa fa-angle-up "></span></a>
+      <!---------mbile-navbar----->
+      <div class="bsnav-mobile ">
+         <div class="bsnav-mobile-overlay"></div>
+         <div class="navbar ">
+            <button class="navbar-toggler toggler-spring mobile-toggler"><span class="fa fa-close "></span></button>
+         </div>
+      </div>
+      <!---------mbile-navbar----->
+      <!-- /.side-menu__block -->
+      {% include 'main/sidebar.html' %}
+      <!-- /.side-menu__block -->
+      <!-- /.search-popup -->
+      <div class="search-popup">
+         <div class="search-popup__overlay custom-cursor__overlay">
+            <div class="cursor "></div>
+            <div class="cursor-follower "></div>
+         </div>
+         <!-- /.search-popup__overlay -->
+         <div class="search-popup__inner ">
+            <form action="# " class="search-popup__form ">
+               <input type="text" name="search" placeholder="Type here to Search.... ">
+               <button type="submit"><i class="flaticon-magnifying-glass "></i></button>
+            </form>
+         </div>
+         <!-- /.search-popup__inner -->
+      </div>
+      <!-- /.search-popup -->
+      <!-----------------------------------script-------------------------------------->
+      <<script src="{{ url_for('static',filename='assets/js/jquery.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/popper.min.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/bootstrap.min.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/bsnav.min.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/jquery-ui.js') }}"></script>
+
+      <script src="{{ url_for('static',filename='assets/js/owl.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/wow.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/jquery.fancybox.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/TweenMax.min.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/validator.min.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/appear.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/moment.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/jquery.flexslider-min.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/pagenav.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/custom.js') }}"></script>
+   </body>
+</html>

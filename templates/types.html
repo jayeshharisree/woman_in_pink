@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="title" content="Woman in Pink">
+      <meta property="fb:app_id" content="312" />
+      <meta property="og:type" content="Woman in Pink" />
+      <meta property="og:url" content="https://womaninpink.herokuapp.com/" />
+      <meta property="og:title" content="Woman in Pink">
+      <meta property="og:image" content="https://womaninpink.herokuapp.com/static/assets/image/hp1.png">
+      <meta property="og:description" content="Woman in Pink">
+      <meta name="full-screen" content="yes">
+      <meta name="theme-color" content="#269bef ">
+      <!-- Responsive -->
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+      <title>Types | Breast Cancer Awareness</title>
+      <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='assets/css/bootstrap.min.css') }}">
+   <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='assets/css/style.css') }}">
+   <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='assets/fonts/font/flaticon.css') }}">
+      <!---------favicon--------------->
+      <link rel="icon" type="image/png" href="{{ url_for('static',filename='assets/image/hp1.png') }}" sizes="32x32">
+      <link rel="icon" type="image/png" href="{{ url_for('static',filename='assets/image/hp1.png') }}" sizes="16x16">
+      <!---------favicon--------------->
+   </head>
+   <body class="home_page_one">
+      <div class="page_wapper">
+         <!--Start Preloader-->
+         <div class="preloader">
+            <div class="preloader_box">
+               <div class="loader">
+                  <img src="{{ url_for('static',filename='assets/image/loader/2.gif') }}">
+               </div>
+            </div>
+         </div>
+         <!--End Preloader-->
+         <!--Header-->
+         <header class="header_v2">
+            {% include 'main/header.html' %}
+         </header>
+         <!--Header-->
+         <!------main-content------>
+         <main class="main-content">
+            <section class="page_title">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-lg-12 d-flex">
+                        <div class="content_box">
+                           <ul class="bread_crumb text-center">
+                              <li class="bread_crumb-item"><a href="#">Home</a></li>
+                              <li class="bread_crumb-item active">Types of Breast Cancers</li>
+                           </ul>
+                           <h1>Types of Breast Cancers</h1>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <div class="single_blog_box">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <!--------list-of categories-------->
+                        <div class="blog_details_content">
+                           <div class="image_box">
+                              <div class="row">
+                                 <div class="col-lg-12">
+                                    <div class="owl-carousel one_items">
+                                       <div class="image">
+                                          <img src="{{ url_for('static',filename='assets/image/blog1.jpg') }}" class="img-fluid" alt="img" />
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <h2 class="heading">Types of Breast Cancers</h2>
+                           <p class="description">
+                              Breast cancer is no longer considered a single disease by medical experts. There are several subtypes of breast cancer and each type has a unique behavior, requiring its own treatment approach.<br>
+                                    <br>
+                              The majority of breast cancers are carcinomas, which are types of cancerous cells that begin in the glandular or ductal tissue of the breast. Carcinomas and other types of cancer can be invasive, meaning they can spread to other parts of the breast and body, or noninvasive, which is sometimes called in situ cancer.<br>
+
+                           </p>
+                           <div class="content_box">
+                              <p><strong><u>Noninvasive Breast Cancer</u></strong></p>
+                              <p class="description">
+                              <ul><li><span class="flaticon-check"></span><strong>DCIS</strong>: Ductal carcinoma in situ is the most common type of noninvasive cancer. It begins in the lining of the milk ducts and, if left untreated, it can develop into invasive breast cancer. Many women can be cured of this type of cancer if it is detected early and treated.</li>
+
+                              <li><span class="flaticon-check"></span><strong>LCIS</strong>: Lobular carcinoma in situ develops in the milk-producing glands (or lobules) and will not necessarily develop into invasive cancer, if untreated. However, having LCIS can increase your risk of future breast cancer.</li>
+                              </ul>
+                              </p><br>
+                              <p><strong><u>Invasive Breast Cancer</u></strong></p>
+                              <p class="description">
+                              <ul><li><span class="flaticon-check"></span><strong>IDC</strong>: Invasive ductal carcinoma is the most common type of breast cancer affecting women today. This type of cancer originates in the lining of milk ducts and can spread into surrounding breast tissue or other parts of the body.</li>
+
+                              <li><span class="flaticon-check"></span><strong>ILC</strong>: Invasive lobular carcinoma is the second most frequent type of invasive breast cancer, accounting for about 10 to 15 percent of all invasive breast cancers.</li>
+                           </ul>
+                              </p><br>
+                           </div>
+
+                           <div class="content_box">
+                              <h4><strong><u>Major Subtypes of Invasive Breast Cancers</u></strong></h4>
+                              <p class="description">
+                              <ul><li><span class="flaticon-check"></span><strong>Hormone Receptor-Positive Breast Cancer</strong>: Also called endocrine-sensitive breast cancer, this cancer involves cells that contain measurable amounts of the estrogen receptor (ER-Positive) or progesterone receptor (PR-Positive). A receptor is a protein molecule within a human cell that receives chemical signals, which cause the cell to behave in a certain way. We often treat this type of cancer with hormone therapy, such as tamoxifen or the aromatase inhibitors. The majority of invasive breast cancers are hormone receptor-positive.</li>
+
+                              <li><span class="flaticon-check"></span><strong>HER2-Positive Breast Cancer</strong>: This is any form of invasive breast cancer with cells that contain an overabundance of the HER2 receptor. These cells respond to treatment with specific anti-HER2 drugs, such as Herceptin®. Approximately 20% of breast cancers are HER2-positive.</li>
+
+                              <li><span class="flaticon-check"></span><strong>Triple Negative Breast Cancer</strong>: This form of breast cancer is defined by what is missing from the cancer cell. Estrogen receptors, progesterone receptors, and HER2 receptors are not present in this type of cancer, which can be harder to treat because hormone therapies and drugs commonly used to treat HER2 positive cancers are ineffective. However, other treatments, such as chemotherapy, may still be successful. Approximately 15% of breast cancers are triple-negative, though this type is more common in the very young, in those with genetic risk, and in women of African descent.</li>
+
+                           </ul>
+                              </p><br>
+                              <h4><strong><u>Unique or rare breast cancer types</u></strong></h4>
+                              <p class="description">
+                              <ul>
+                              <li><span class="flaticon-check"></span><strong>Inflammatory Breast Cancer</strong>This form of invasive breast cancer usually has no discrete lump or tumor. The skin of the breast may feel excessively warm, or have a red, thick, and pitted appearance, much like an orange peel.</li>
+
+                              <li><span class="flaticon-check"></span><strong>Medullary Carcinoma</strong>: This is a less common subtype of IDC. However, women with an inherited BRCA1 mutation have a somewhat higher risk of developing it.</li>
+
+                              <li><span class="flaticon-check"></span><strong>Metaplastic Carcinoma</strong>: In this rare type of invasive breast cancer, some of the cells in the tumor change into a different type of breast cancer to form a mixed tumor.</li>
+
+                              <li><span class="flaticon-check"></span><strong>Mucinous Carcinoma</strong>:This type of cancer, which is also called colloid cancer, involves excessive mucous in the cancer cells under the microscope. Mucinous cells divide more slowly, which make this type of invasive cancer less aggressive than others.</li>
+
+                              <li><span class="flaticon-check"></span><strong>Paget Disease</strong>: This rare type of breast cancer involves the skin of the nipple and the areola. A telltale sign of Paget disease is the presence of malignant Paget cells in the skin of the nipple. Symptoms include itching or tingling in the nipple area and a change in the nipple’s appearance.</li>
+
+                              <li><span class="flaticon-check"></span><strong>Papillary Carcinoma</strong>: This is a rare subtype of IDC accounting for fewer than 1 percent of all breast cancers. Cells exhibit finger-like extensions, called papules, under the microscope.</li>
+
+                              <li><span class="flaticon-check"></span><strong>Tubular Carcinoma</strong>: A less common subtype of IDC, this cancer consists of collections of small tube-like cells that tend to grow slowly.</li>
+
+                           </ul>
+                              </p><br>
+                           </div>
+
+                           <div class="content_box">
+                              <h4><strong><u>Male Breast Cancer</u></strong></h4><br>
+                              <p class="description">
+                              Breast cancer can occur in men, though it is rare and accounts for less than 1 percent of all breast carcinomas. Men often detect the cancer as a new lump or mass in their breast or chest area.
+                                 <br><br>
+                                 Many facilities treat male breast cancer with a mastectomy, which is a surgical removal of the whole breast.we can successfully treat male breast cancer with a lumpectomy, which involves the surgical removal of only the lump from the breast. Ask your doctor about your options, which will depend on your individual case.
+                              </p><br>
+                           </div>
+
+
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            {% include 'main/footer.html' %}
+            <!-------------main-centent-end--------------->
+         </main>
+         <!-------------pagewapper-end--------------->
+      </div>
+      <!--Scroll to top-->
+      <a href="# " id="scroll" class="default-bg " style="display: inline;"><span class="fa fa-angle-up "></span></a>
+      <!---------mbile-navbar----->
+      <div class="bsnav-mobile ">
+         <div class="bsnav-mobile-overlay"></div>
+         <div class="navbar ">
+            <button class="navbar-toggler toggler-spring mobile-toggler"><span class="fa fa-close "></span></button>
+         </div>
+      </div>
+      <!---------mbile-navbar----->
+      <!-- /.side-menu__block -->
+      {% include 'main/sidebar.html' %}
+      <!-- /.side-menu__block -->
+      <!-- /.search-popup -->
+      <div class="search-popup">
+         <div class="search-popup__overlay custom-cursor__overlay">
+            <div class="cursor "></div>
+            <div class="cursor-follower "></div>
+         </div>
+         <!-- /.search-popup__overlay -->
+         <div class="search-popup__inner ">
+            <form action="# " class="search-popup__form ">
+               <input type="text" name="search" placeholder="Type here to Search.... ">
+               <button type="submit"><i class="flaticon-magnifying-glass "></i></button>
+            </form>
+         </div>
+         <!-- /.search-popup__inner -->
+      </div>
+      <!-- /.search-popup -->
+      <!-----------------------------------script-------------------------------------->
+      <<script src="{{ url_for('static',filename='assets/js/jquery.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/popper.min.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/bootstrap.min.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/bsnav.min.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/jquery-ui.js') }}"></script>
+
+      <script src="{{ url_for('static',filename='assets/js/owl.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/wow.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/jquery.fancybox.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/TweenMax.min.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/validator.min.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/appear.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/moment.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/jquery.flexslider-min.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/pagenav.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/custom.js') }}"></script>
+   </body>
+</html>

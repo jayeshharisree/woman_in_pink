@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="title" content="Woman in Pink">
+      <meta property="fb:app_id" content="312" />
+      <meta property="og:type" content="Woman in Pink" />
+      <meta property="og:url" content="https://womaninpink.herokuapp.com/" />
+      <meta property="og:title" content="Woman in Pink">
+      <meta property="og:image" content="https://womaninpink.herokuapp.com/static/assets/image/hp1.png">
+      <meta property="og:description" content="Woman in Pink">
+      <meta name="full-screen" content="yes">
+      <meta name="theme-color" content="#269bef ">
+      <!-- Responsive -->
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+      <title>Prevention | Breast Cancer Awareness</title>
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='assets/css/bootstrap.min.css') }}">
+   <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='assets/css/style.css') }}">
+   <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='assets/fonts/font/flaticon.css') }}">
+      <!---------favicon--------------->
+      <link rel="icon" type="image/png" href="{{ url_for('static',filename='assets/image/hp1.png') }}" sizes="32x32">
+      <link rel="icon" type="image/png" href="{{ url_for('static',filename='assets/image/hp1.png') }}" sizes="16x16">
+      <!---------favicon--------------->
+   </head>
+   <body class="home_page_one">
+      <div class="page_wapper">
+         <!--Start Preloader-->
+         <div class="preloader">
+            <div class="preloader_box">
+               <div class="loader">
+                  <img src="{{ url_for('static',filename='assets/image/loader/2.gif') }}">
+               </div>
+            </div>
+         </div>
+         <!--End Preloader -->
+         <!--Header-->
+         <header class="header_v2">
+            {% include 'main/header.html' %}
+         </header>
+         <!--Header-->
+         <!------main-content------>
+         <main class="main-content">
+            <section class="page_title">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-lg-12 d-flex">
+                        <div class="content_box">
+                           <ul class="bread_crumb text-center">
+                              <li class="bread_crumb-item"><a href="#">Home</a></li>
+                              <li class="bread_crumb-item active"> Prevention</li>
+                           </ul>
+                           <h1>Prevention</h1>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <!--------Checkout-------->
+            <section class="prevention_all">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-lg-3">
+                        <div class="icon_box type_two wow fadeIn " data-wow-delay="00ms" data-wow-duration="1500ms">
+                           <h2><a href="#">Don’t use tobacco</a></h2>
+                           <div class="icon_box">
+                              <img src="{{ url_for('static',filename='assets/image/smoke1.png') }}" class="img-fluid svg_icon" alt="img" />
+                           </div>
+                           <p>All types of tobacco can put you on a collision course with cancer.</p>
+                        </div>
+                     </div>
+                     <div class="col-lg-3">
+                        <div class="icon_box type_two wow fadeIn " data-wow-delay="100ms" data-wow-duration="1500ms">
+                           <h2><a href="#">Eat a Variety of Healthy Foods</a></h2>
+                           <div class="icon_box">
+                              <img src="{{ url_for('static',filename='assets/image/food.png') }}" class="img-fluid svg_icon" alt="img" />
+                           </div>
+                           <p>hough making healthy selections at the grocery store and at mealtime can’t guarantee you won’t get cancer, it can help reduce your risk.</p></p>
+                        </div>
+                     </div>
+                     <div class="col-lg-3">
+                        <div class="icon_box type_two wow fadeIn " data-wow-delay="200ms" data-wow-duration="1500ms">
+                           <h2><a href="#">Stay active and maintain a healthy weight.</a></h2>
+                           <div class="icon_box">
+                              <img src="{{ url_for('static',filename='assets/image/weight.png') }}" class="img-fluid svg_icon" alt="img" />
+                           </div>
+                           <p>Maintaining a healthy weight and exercising regularly also play roles in preventing cancer. </p>
+                        </div>
+                     </div>
+                     <div class="col-lg-3">
+                        <div class="icon_box type_two wow fadeIn " data-wow-delay="300ms" data-wow-duration="1500ms">
+                           <h2><a href="#">Get screened</a></h2>
+                           <div class="icon_box">
+                              <img src="{{ url_for('static',filename='assets/image/Breast cancer awareness-cuate.png') }}" class="img-fluid svg_icon" alt="img" />
+                           </div>
+                              <p>Regular screening and self-examination for certain cancers increases your chances of discovering cancer early. </p>
+                        </div>
+                     </div>
+                     <div class="col-lg-3">
+                        <div class="icon_box type_two wow fadeIn " data-wow-delay="400ms" data-wow-duration="1500ms">
+                           <h2><a href="#">Breast-feed</a></h2>
+                           <div class="icon_box">
+                              <img src="{{ url_for('static',filename='assets/image/breastfeeding.png') }}" class="img-fluid svg_icon" alt="img" />
+                           </div>
+                           <p>Breast-feeding might play a role in breast cancer prevention. The longer you breast-feed, the greater the protective effect.</p>
+                        </div>
+                     </div>
+                     <div class="col-lg-3">
+                        <div class="icon_box type_two wow fadeIn " data-wow-delay="500ms" data-wow-duration="1500ms">
+                           <h2><a href="#">Limit dose and duration of hormone therapy</a></h2>
+                           <div class="icon_box">
+                              <img src="{{ url_for('static',filename='assets/image/hormone-therapy.png') }}" class="img-fluid svg_icon" alt="img" />
+                           </div>
+                           <p>Combination hormone therapy for more than three to five years increases the risk of breast cancer. If you're taking hormone therapy for menopausal symptoms, ask your doctor about other options.</p>
+                        </div>
+                     </div>
+                     <div class="col-lg-3">
+                        <div class="icon_box type_two wow fadeIn " data-wow-delay="600ms" data-wow-duration="1500ms">
+                           <h2><a href="#">Limit alcohol</a></h2>
+                           <div class="icon_box">
+                              <img src="{{ url_for('static',filename='assets/image/alcohol.png') }}" class="img-fluid svg_icon" alt="img" />
+                           </div>
+                           <p>The more alcohol you drink, the greater your risk of developing breast cancer. </p>
+                        </div>
+                     </div>
+                     <div class="col-lg-3">
+                        <div class="icon_box type_two wow fadeIn " data-wow-delay="700ms" data-wow-duration="1500ms">
+                           <h2><a href="#">Find Out Your Family History</a></h2>
+                           <div class="icon_box">
+                              <img src="{{ url_for('static',filename='assets/image/family.png') }}" class="img-fluid svg_icon" alt="img" />
+                           </div>
+                           <p>Women with a strong family history of cancer can take special steps to protect themselves, so it’s important for women to know their family history.</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <!--------Checkout-------->
+            {% include 'main/footer.html' %}
+            <!-------------main-centent-end--------------->
+         </main>
+         <!-------------pagewapper-end--------------->
+      </div>
+      <!--Scroll to top-->
+      <a href="# " id="scroll" class="default-bg " style="display: inline;"><span class="fa fa-angle-up "></span></a>
+      <!---------mbile-navbar----->
+      <div class="bsnav-mobile ">
+         <div class="bsnav-mobile-overlay"></div>
+         <div class="navbar ">
+            <button class="navbar-toggler toggler-spring mobile-toggler"><span class="fa fa-close "></span></button>
+         </div>
+      </div>
+      <!---------mbile-navbar----->
+      <!-- /.side-menu__block -->
+      {% include 'main/sidebar.html' %}
+      <!-- /.side-menu__block -->
+      <!-- /.search-popup -->
+      <div class="search-popup">
+         <div class="search-popup__overlay custom-cursor__overlay">
+            <div class="cursor "></div>
+            <div class="cursor-follower "></div>
+         </div>
+         <!-- /.search-popup__overlay -->
+         <div class="search-popup__inner ">
+            <form action="# " class="search-popup__form ">
+               <input type="text" name="search" placeholder="Type here to Search.... ">
+               <button type="submit"><i class="flaticon-magnifying-glass "></i></button>
+            </form>
+         </div>
+         <!-- /.search-popup__inner -->
+      </div>
+      <!-- /.search-popup -->
+      <!-----------------------------------script-------------------------------------->
+      <script src="{{ url_for('static',filename='assets/js/jquery.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/popper.min.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/bootstrap.min.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/bsnav.min.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/jquery-ui.js') }}"></script>
+
+      <script src="{{ url_for('static',filename='assets/js/owl.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/wow.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/jquery.fancybox.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/TweenMax.min.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/validator.min.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/appear.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/moment.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/jquery.flexslider-min.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/pagenav.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/custom.js') }}"></script>
+   </body>
+</html>

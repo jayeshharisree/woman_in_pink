@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="title" content="Woman in Pink">
+      <meta property="fb:app_id" content="312" />
+      <meta property="og:type" content="Woman in Pink" />
+      <meta property="og:url" content="https://womaninpink.herokuapp.com/" />
+      <meta property="og:title" content="Woman in Pink">
+      <meta property="og:image" content="https://womaninpink.herokuapp.com/static/assets/image/hp1.png">
+      <meta property="og:description" content="Woman in Pink">
+      <meta name="full-screen" content="yes">
+      <meta name="theme-color" content="#269bef ">
+      <!-- Responsive -->
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+      <title>Detection | Breast Cancer Awareness</title>
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='assets/css/bootstrap.min.css') }}">
+   <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='assets/css/style.css') }}">
+   <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='assets/fonts/font/flaticon.css') }}">
+
+      <link rel="icon" type="image/png" href="{{ url_for('static',filename='assets/image/hp1.png') }}" sizes="32x32">
+      <link rel="icon" type="image/png" href="{{ url_for('static',filename='assets/image/hp1.png') }}" sizes="16x16">
+   <style>
+      .img-preview {
+      width: 256px;
+      height: 256px;
+      position: relative;
+      border: 5px solid #F8F8F8;
+      box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+      margin-top: 1em;
+      margin-bottom: 1em;    
+  }
+  
+  .img-preview>div {
+      width: 100%;
+      height: 100%;
+      background-size: 256px 256px;
+      background-repeat: no-repeat;
+      background-position: center;
+  }
+  
+  input[type="file"] {
+      display: none;
+  }
+  
+  .upload-label{
+      display: inline-block;
+      padding: 12px 30px;
+      background: blue;
+      color: #fff;
+      font-size: 1em;
+      transition: all .4s;
+      cursor: pointer;
+  }
+  
+  .upload-label:hover{
+      background: #34495E;
+      color: #39D2B4;
+  }
+
+  
+  @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+  }
+</style>
+   </head>
+   <body class="home_page_one">
+      <div class="page_wapper">
+         <!--Start Preloader-->
+         <div class="preloader">
+            <div class="preloader_box">
+               <div class="loader">
+                  <img src="{{ url_for('static',filename='assets/image/loader/2.gif') }}">
+               </div>
+            </div>
+         </div>
+         <!--End Preloader -->
+         <!--Header-->
+         <header class="header_v2">
+            {% include 'main/header.html' %}
+         </header>
+         <!--Header-->
+         <!------main-content------>
+         <main class="main-content">
+            <section class="page_title">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-lg-12 d-flex">
+                        <div class="content_box">
+                           <ul class="bread_crumb text-center">
+                              <li class="bread_crumb-item"><a href="#">Home</a></li>
+                              <li class="bread_crumb-item active"> Predict Breast Cancer</li>
+                           </ul>
+                           <h1>Predict Breast Cancer</h1>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            
+            <div class="single_blog_box">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <!--------list-of categories-------->
+                        <div class="blog_details_content">
+                           <div class="image_box">
+                              <div class="row">
+                                 <div class="col-lg-12">
+                                       <h4>Upload Histopathology Image</h4><br>
+                                       <span>Histopathology is the diagnosis and study of diseases of the tissues, and involves examining tissues and/or cells under a microscope. Histopathologists are responsible for making tissue diagnoses and helping clinicians manage a patient's care. <br>Here using maching learning and AI, we classifies slices to detect breast cancer tissues vs normal tissues.</span><br>
+                                       <br><form id="upload-file" method="post" enctype="multipart/form-data">
+                                          <label for="imageUpload" class="upload-label">
+                                              Choose...
+                                          </label>
+                                          <input type="file" name="file" id="imageUpload" accept=".png, .jpg, .jpeg">
+                                      </form>
+                  
+                                      <div class="image-section" style="display:none;">
+                                       <div class="img-preview">
+                                           <div id="imagePreview">
+                                           </div>
+                                       </div>
+                                       <div class="img-gradcam">
+                                           <div id="imageGradCam">
+                                           </div>
+                                       </div>
+                                       <div>
+                                           <button type="button" class="btn btn-info btn-lg" id="btn-predict">Predict!</button>
+                                       </div>
+                                   </div>
+                                   <br><br>
+                                   <h3 id="result">
+                                       <span> </span>
+                                   </h3>
+                                   <img src="" id="result_img"/>
+                               
+                               </div>
+
+                                 </div>
+                              </div>
+                           </div>
+                     </div>
+                  </div>
+               </div>
+         
+
+
+            {% include 'main/footer.html' %}
+            <!-------------main-centent-end--------------->
+         </main>
+         <!-------------pagewapper-end--------------->
+      </div>
+      <!--Scroll to top-->
+      <a href="# " id="scroll" class="default-bg " style="display: inline;"><span class="fa fa-angle-up "></span></a>
+      <!---------mbile-navbar----->
+      <div class="bsnav-mobile ">
+         <div class="bsnav-mobile-overlay"></div>
+         <div class="navbar ">
+            <button class="navbar-toggler toggler-spring mobile-toggler"><span class="fa fa-close "></span></button>
+         </div>
+      </div>
+      <!---------mbile-navbar----->
+      <!-- /.side-menu__block -->
+      {% include 'main/sidebar.html' %}
+      <!-- /.side-menu__block -->
+      <!-- /.search-popup -->
+      <div class="search-popup">
+         <div class="search-popup__overlay custom-cursor__overlay">
+            <div class="cursor "></div>
+            <div class="cursor-follower "></div>
+         </div>
+         <!-- /.search-popup__overlay -->
+         <div class="search-popup__inner ">
+            <form action="# " class="search-popup__form ">
+               <input type="text" name="search" placeholder="Type here to Search.... ">
+               <button type="submit"><i class="flaticon-magnifying-glass "></i></button>
+            </form>
+         </div>
+         <!-- /.search-popup__inner -->
+      </div>
+      <!-- /.search-popup -->
+      <!-----------------------------------script-------------------------------------->
+      <script src="{{ url_for('static',filename='assets/js/jquery.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/popper.min.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/bootstrap.min.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/bsnav.min.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/jquery-ui.js') }}"></script>
+
+      <script src="{{ url_for('static',filename='assets/js/owl.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/wow.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/jquery.fancybox.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/TweenMax.min.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/validator.min.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/appear.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/moment.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/jquery.flexslider-min.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/pagenav.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/custom.js') }}"></script>
+
+      <script>
+         $(document).ready(function () {
+             // Init
+             $('.image-section').hide();
+             $('#result').hide();
+         
+             // Upload Preview
+             function readURL(input) {
+                 if (input.files && input.files[0]) {
+                     var reader = new FileReader();
+                     reader.onload = function (e) {
+                         $('#imagePreview').css('background-image', 'url(' + e.target.result + ')');
+                         $('#imagePreview').hide();
+                         $('#imagePreview').fadeIn(650);
+                     }
+                     reader.readAsDataURL(input.files[0]);
+                 }
+             }
+             $("#imageUpload").change(function () {
+                 $('.image-section').show();
+                 $('#btn-predict').show();
+                 $('#result').text('');
+                 $('#result').hide();
+                 let image = document.getElementById("result_img");
+                 image.src = ""; 
+                 readURL(this);
+             });
+         
+             // Predict
+             $('#btn-predict').click(function () {
+                 var form_data = new FormData($('#upload-file')[0]);
+         
+                 
+         
+                 // Make prediction by calling api /predict
+                 $.ajax({
+                     type: 'POST',
+                     url: '/v1/predict',
+                     data: form_data,
+                     contentType: false,
+                     cache: false,
+                     processData: false,
+                     async: true,
+                     success: function (data) {
+                         // Get and display the result
+                         $('.loader').hide();
+                         $('#result').fadeIn(600);
+                         let result = document.getElementById("result");
+                         result.innerHTML = ' Result: <br>' + data[0]+"<br>"+data[1];
+                         const myArray = data[2].split("\\");
+                         var imgData = '{{ url_for("static",filename="") }}'+ "uploads/"+myArray[myArray.length - 1];;
+                         let image = document.getElementById("result_img");
+                        image.src = imgData; 
+                         readURL(this);
+                         console.log('Success!');
+                     },
+                 });
+             });
+         });
+         
+     </script>
+
+   </body>
+</html>

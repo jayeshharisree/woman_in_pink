@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="title" content="Woman in Pink">
+      <meta property="fb:app_id" content="312" />
+      <meta property="og:type" content="Woman in Pink" />
+      <meta property="og:url" content="https://womaninpink.herokuapp.com/" />
+      <meta property="og:title" content="Woman in Pink">
+      <meta property="og:image" content="https://womaninpink.herokuapp.com/static/assets/image/hp1.png">
+      <meta property="og:description" content="Woman in Pink">
+      <meta name="full-screen" content="yes">
+      <meta name="theme-color" content="#269bef ">
+      <!-- Responsive -->
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+      <title>Faq's | Breast Cancer Awareness</title>
+ <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='assets/css/bootstrap.min.css') }}">
+   <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='assets/css/style.css') }}">
+   <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='assets/fonts/font/flaticon.css') }}">
+      <!---------favicon--------------->
+      <link rel="icon" type="image/png" href="{{ url_for('static',filename='assets/image/hp1.png') }}" sizes="32x32">
+      <link rel="icon" type="image/png" href="{{ url_for('static',filename='assets/image/hp1.png') }}" sizes="16x16">
+      <!---------favicon--------------->
+   </head>
+   <body class="home_page_one">
+      <div class="page_wapper">
+         <!--Start Preloader-->
+         <div class="preloader">
+            <div class="preloader_box">
+               <div class="loader">
+                  <img src="{{ url_for('static',filename='assets/image/loader/2.gif') }}">
+               </div>
+            </div>
+         </div>
+         <!--End Preloader -->
+         <!--Header-->
+         <header class="header_v2">
+
+            {% include 'main/header.html' %}
+         </header>
+         <!--Header-->
+         <!------main-content------>
+         <main class="main-content">
+            <section class="page_title">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-lg-12 d-flex">
+                        <div class="content_box">
+                           <ul class="bread_crumb text-center">
+                              <li class="bread_crumb-item"><a href="#">Home</a></li>
+                              <li class="bread_crumb-item active"> Faq's</li>
+                           </ul>
+                           <h1>Faq's</h1>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <!--------doctors-------->
+            <section class="faq_all">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-lg-12">
+                        <div id="accordiontwo">
+                           <div class="card faq_box type_one">
+                              <div class="card-header" id="headingOne">
+                                 <h5 class="mb-0">
+                                    <button class="faq_btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Can physical activity reduce the risk of breast cancer?<span class="flaticon-question-2 faq_icon"></span>
+                                    </button>
+                                 </h5>
+                              </div>
+                              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordiontwo">
+                                 <div class="card-body">
+                                 Exercise boosts the immune system and helps you to keep your weight in check. With as little as three hours of exercise per week, or about 30 minutes a day, a woman can begin to lower her risk of breast cancer. This doesn’t require going to a gym either. Power walking is more than sufficient!
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="card faq_box type_one">
+                              <div class="card-header" id="headingTwo">
+                                 <h5 class="mb-0">
+                                    <button class="faq_btn collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Can a healthy diet help to prevent breast cancer?<span class="flaticon-question-2 faq_icon"></span>
+                                    </button>
+                                 </h5>
+                              </div>
+                              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordiontwo">
+                                 <div class="card-body">
+                                    A nutritious, low-fat diet (30 grams or less) with plenty of fruits and green and orange vegetables can help reduce the risk of developing breast cancer. A high-fat diet increases the risk because fat triggers estrogen production that can fuel tumor growth.
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="card faq_box type_one">
+                              <div class="card-header" id="headingThree">
+                                 <h5 class="mb-0">
+                                    <button class="faq_btn collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Does smoking cause breast cancer?<span class="flaticon-question-2 faq_icon"></span>
+                                    </button>
+                                 </h5>
+                              </div>
+                              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordiontwo">
+                                 <div class="card-body">
+                                 Smoking is a confirmed risk factor for many types of cancer. Recent research in the recent year has confirmed that smoking is a contributing risk factor for developing breast cancer. Additionally, second hand smoke is also a risk factor for cancer. So if you are a smoker, help yourself in a significant way and join a smoking cessation program to help you stop. The day you stop smoking the healing can begin and each week in which you are smoke-free, you give yourself increasing advantages for a healthier life. Smoking also directly contributes to heart and other lung diseases, too.
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="card faq_box type_one">
+                              <div class="card-header" id="headingfour">
+                                 <h5 class="mb-0">
+                                    <button class="faq_btn collapsed" data-toggle="collapse" data-target="#faqstyleone" aria-expanded="true" aria-controls="faqstyleone">
+                                    Can drinking alcohol increase the risk of breast cancer?<span class="flaticon-question-2 faq_icon"></span>
+                                    </button>
+                                 </h5>
+                              </div>
+                              <div id="faqstyleone" class="collapse " aria-labelledby="headingfour" data-parent="#accordiontwo">
+                                 <div class="card-body">
+                                    Moderation is key. One drink per day has been shown to slightly increase the risk of breast cancer. Having more than one drink per day has shown to be a more significant risk factor, and the alcohol content doesn’t matter: wine, beer or a mixed drink. Alcohol also increases estrogen in your bloodstream.
+                                    <br>Although we know that more than one drink per day increases risks, to date there are no studies that demonstrate directly that the more a person drinks, the greater their risk for cancer. And in some cases, drinking one glass of wine a day can offer heart-health benefit. If you drink alcohol, this is an important topic to discuss with your doctor so that you will know what limits are best for you to observe.
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="card faq_box type_one">
+                              <div class="card-header" id="headingfive">
+                                 <h5 class="mb-0">
+                                    <button class="faq_btn collapsed" data-toggle="collapse" data-target="#faqstyletwotwo" aria-expanded="false" aria-controls="faqstyletwotwo">
+                                    Is there a link between oral contraceptives and breast cancer?<span class="flaticon-question-2 faq_icon"></span>
+                                    </button>
+                                 </h5>
+                              </div>
+                              <div id="faqstyletwotwo" class="collapse" aria-labelledby="headingfive" data-parent="#accordiontwo">
+                                 <div class="card-body">
+                                 There is an increased risk of breast cancer for women who have been using birth control pills for more than five years. However due to the low amount of hormones in birth control pills today, the risk is relatively small. But if a young woman has a significant family history of breast cancer, her gynecologist may recommend taking a break for a year from the pill at the 5-year time frame then resuming again for another 5 years. Although evidence-based research data does not offer strong support for this standard of care, it has nevertheless become an increasingly common practice.
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="card faq_box type_one">
+                              <div class="card-header" id="headingsix">
+                                 <h5 class="mb-0">
+                                    <button class="faq_btn collapsed" data-toggle="collapse" data-target="#faqstylethree" aria-expanded="false" aria-controls="faqstylethree">
+                                    Is there a link between hormone replacement therapy (HRT) and breast cancer?<span class="flaticon-question-2 faq_icon"></span>
+                                    </button>
+                                 </h5>
+                              </div>
+                              <div id="faqstylethree" class="collapse" aria-labelledby="headingsix" data-parent="#accordiontwo">
+                                 <div class="card-body">
+                                 Yes, there is. HRT was added to the carcinogenic list by the American Cancer Society in the early 2000s. It is recommended that women with known risks not be placed on HRT to control of menopausal symptoms. They should instead seek other safer alternatives.
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="card faq_box type_one">
+                              <div class="card-header" id="headingseven">
+                                 <h5 class="mb-0">
+                                    <button class="faq_btn collapsed" data-toggle="collapse" data-target="#faqstyletwofour" aria-expanded="false" aria-controls="faqstyletwofour">
+                                    How often should I do a breast self exam (BSE)?<span class="flaticon-question-2 faq_icon"></span>
+                                    </button>
+                                 </h5>
+                              </div>
+                              <div id="faqstyletwofour" class="collapse" aria-labelledby="headingseven" data-parent="#accordiontwo">
+                                 <div class="card-body">
+                                    Give yourself a breast self-exam once a month. Look for any changes in breast tissue, such as changes in size, feeling a palpable lump, dimpling or puckering of the breast, inversion of the nipple, redness or scaliness of the breast skin, redness or scaliness of the nipple/areola area, or discharge of secretions from the nipple.
+<br>
+If you discover a persistent lump in your breast or any changes, it is very important that you see a physician immediately. Though 8 out of 10 lumps are benign, all require evaluation to confirm that they are not cancerous.
+<br>
+Women should perform their breast self exam 7-10 days after their menstrual period starts which is also when their breasts are the least tender and lumpy. If they are no longer menstruating, then she should select the same day of the month (first of the month for example) and mark it on the calendar to remind herself when to perform this self exam. What to look for is a change from last month’s exam to this month’s exam. It is not unusual to have lumpy or bumpy breasts.
+<br>
+All women should know the geography of their own breasts. If having trouble remembering, draw a diagram of where the lumps, bumps, grooves, and other findings are felt so that this can be used as a reminder from month to month. There is no added value in doing breast self exams more often than monthly. Also the findings may be different as well, in relationship to where a woman is in her menstrual cycle.
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+
+            {% include 'main/footer.html' %}
+            <!-------------main-centent-end--------------->
+         </main>
+         <!-------------pagewapper-end--------------->
+      </div>
+      <!--Scroll to top-->
+      <a href="# " id="scroll" class="default-bg " style="display: inline;"><span class="fa fa-angle-up "></span></a>
+      <!---------mbile-navbar----->
+      <div class="bsnav-mobile ">
+         <div class="bsnav-mobile-overlay"></div>
+         <div class="navbar ">
+            <button class="navbar-toggler toggler-spring mobile-toggler"><span class="fa fa-close "></span></button>
+         </div>
+      </div>
+      <!---------mbile-navbar----->
+      <!-- /.side-menu__block -->
+      {% include 'main/sidebar.html' %}
+      <!-- /.side-menu__block -->
+      <!-- /.search-popup -->
+      <div class="search-popup">
+         <div class="search-popup__overlay custom-cursor__overlay">
+            <div class="cursor "></div>
+            <div class="cursor-follower "></div>
+         </div>
+         <!-- /.search-popup__overlay -->
+         <div class="search-popup__inner ">
+            <form action="# " class="search-popup__form ">
+               <input type="text" name="search" placeholder="Type here to Search.... ">
+               <button type="submit"><i class="flaticon-magnifying-glass "></i></button>
+            </form>
+         </div>
+         <!-- /.search-popup__inner -->
+      </div>
+      <!-- /.search-popup -->
+      <!-----------------------------------script-------------------------------------->
+      <script src="{{ url_for('static',filename='assets/js/jquery.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/popper.min.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/bootstrap.min.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/bsnav.min.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/jquery-ui.js') }}"></script>
+
+      <script src="{{ url_for('static',filename='assets/js/owl.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/wow.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/jquery.fancybox.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/TweenMax.min.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/validator.min.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/appear.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/moment.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/jquery.flexslider-min.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/pagenav.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/custom.js') }}"></script>
+   </body>
+</html>

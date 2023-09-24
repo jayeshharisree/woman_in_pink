@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="utf-8">
+      <meta name="title" content="Woman in Pink">
+      <meta property="fb:app_id" content="312" />
+      <meta property="og:type" content="Woman in Pink" />
+      <meta property="og:url" content="https://womaninpink.herokuapp.com/" />
+      <meta property="og:title" content="Woman in Pink">
+      <meta property="og:image" content="https://womaninpink.herokuapp.com/static/assets/image/hp1.png">
+      <meta property="og:description" content="Woman in Pink">
+      <meta name="full-screen" content="yes">
+      <meta name="theme-color" content="#269bef ">
+      <!-- Responsive -->
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+      <title>Homepage | Breast Cancer Awareness</title>
+   <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='assets/css/bootstrap.min.css') }}">
+   <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='assets/css/style.css') }}">
+   <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='assets/fonts/font/flaticon.css') }}">
+      <!---------favicon--------------->
+      <link rel="icon" type="image/png" href="{{ url_for('static',filename='assets/image/hp1.png') }}" sizes="32x32">
+      <link rel="icon" type="image/png" href="{{ url_for('static',filename='assets/image/hp1.png') }}" sizes="16x16">
+      <!---------favicon--------------->
+   </head>
+   <body class="home_page_one">
+      <div class="page_wapper">
+          <!--Start Preloader-->
+          <div class="preloader">
+            <div class="preloader_box">
+               <div class="loader">
+                  <img src="{{ url_for('static',filename='assets/image/loader/2.gif') }}">
+               </div>
+            </div>
+         </div>
+         <!--End Preloader -->
+         <!--Header-->
+         <header class="header_v2">
+            {% include 'main/header.html' %}
+         </header>
+         <!--Header-->
+         <main class="main-content">
+            <!------main-content------>
+            <!------main-slider------>
+            <section class="main-slider">
+               <div class="main-slider-carousel main_slider owl-carousel owl-theme">
+                  <div class="slide one">
+                     <div class="container text-left">
+                        <div class="row">
+                           <div class="col-lg-7 d-flex">
+                              <div class="content">
+                                 <h1>We're here for you</h1>
+                                 <div class="text">Our mission is to continue to strive to put breast cancer education and awareness.</div>
+                              </div>
+                           </div>
+                           <div class="col-lg-5">
+                              <div class="slider_image slide_image_right clearfix">
+                                 <div class="image image_1 floating">
+                                    <img src="{{ url_for('static',filename='assets/image/hp5.png') }}" class="img-fluid" alt="img" />
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="slide two">
+                     <div class="container text-left">
+                        <div class="row">
+                          
+                           <div class="col-lg-6 d-flex order-last">
+                              <div class="content slide_content_right">
+                                 <h1>Know your body</h1>
+                                 <div class="text">Breast cancer is the second most common kind of cancer in women.</div>
+                              </div>
+                           </div>
+
+                           <div class="col-lg-6 order-first">
+                              <div class="slider_image slide_image_left clearfix">
+                                 <div class="image image_1 floating">
+                                    <img src="{{ url_for('static',filename='assets/image/hp1.png') }}" class="img-fluid" alt="img" />
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="slide three">
+                     <div class="container text-left">
+                        <div class="row">
+                           <div class="col-lg-7 d-flex">
+                              <div class=" content">
+                                 <h1>Support beyond measure, for a life beyond cancer.</h1>
+                                 <div class="text">Learn how to take care of yourself and navigate healthcare during the COVID-19 pandemic.</div>
+                              </div>
+                           </div>
+                           <div class="col-lg-5">
+                              <div class="slider_image slide_image_right clearfix">
+                                 <div class="image image_1 floating">
+                                    <img src="{{ url_for('static',filename='assets/image/Breast cancer awareness-pana.png') }}" class="img-fluid" alt="img" />
+                                 </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <!------main-slider------>
+            <!-------------welome_box---------->
+            <section class="welcome type_one">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                        <div class="icon_box type_one wow slideInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
+                           <div class="icon">
+                              <img src="{{ url_for('static',filename='assets/image/smoke1.png') }}" class="img-fluid svg_image" alt="home" /> <span class="flaticon-virus"></span>
+                           </div>
+                           <div class="content_box">
+                              <h2><a href="#">Don’t use tobacco</a></h2>
+                              <p>All types of tobacco can put you on a collision course with cancer. </p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                        <div class="icon_box type_one wow slideInUp" data-wow-delay="100ms" data-wow-duration="1500ms">
+                           <div class="icon">
+                              <img src="{{ url_for('static',filename='assets/image/food.png') }}" class="img-fluid svg_image" alt="home" /> <span class="flaticon-virus"></span>
+                           </div>
+                           <div class="content_box">
+                              <h2><a href="#">Eat a Variety of Healthy Foods</a></h2>
+                              <p>Though making healthy selections at the grocery store and at mealtime can’t guarantee you won’t get cancer, it can help reduce your risk.</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                        <div class="icon_box type_one wow slideInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+                           <div class="icon">
+                              <img src="{{ url_for('static',filename='assets/image/weight.png') }}" class="img-fluid svg_image" alt="home" /> <span class="flaticon-virus"></span>
+                           </div>
+                           <div class="content_box">
+                              <h2><a href="#">Stay active and maintain a healthy weight.</a></h2>
+                              <p>Maintaining a healthy weight and exercising regularly also play roles in preventing cancer. </p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                        <div class="icon_box type_one wow slideInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+                           <div class="icon">
+                              <img src="{{ url_for('static',filename='assets/image/Breast cancer awareness-cuate.png') }}" class="img-fluid svg_image" alt="home" /> <span class="flaticon-virus"></span>
+                           </div>
+                           <div class="content_box">
+                              <h2><a href="#">Get screened</a></h2>
+                              <p>Regular screening and self-examination for certain cancers increases your chances of discovering cancer early. </p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <!-------------welome_box---------->
+            <!-------------abou us---------->
+            <section class="about type_one">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-lg-6">
+                        <div class="image_box">
+                           <div class="image image_1">
+                              <img src="{{ url_for('static',filename='assets/image/hp5.png') }}" class="img-fluid" alt="img" />
+                           </div>
+                           <div class="image image_2">
+                              <img src="{{ url_for('static',filename='assets/image/breastCancer.png') }}" class="img-fluid" alt="img" />
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-6">
+                        <div class="heading tp_one  icon_dark">
+                           <h6>about Breast Cancer</h6>
+                           <h1>Breast Cancer 2020</h1>
+                        </div>
+                        <div class="about_content">
+                           <p class="description">Breast cancer occurs when cells in the breast divide and grow without their normal control. All women – and some men – are at risk for breast cancer. This risk increases with age. Now is the time to know what to look for and what you need to do to take control of your health.
+                           </p>
+                           <div class="symptoms">
+                              <h2>Learn the symptoms.</h2>
+                              <div class="row">
+                                 <div class="col-lg-6">
+                                    <ul>
+                                       <li>
+                                          <span class="flaticon-check"></span>
+                                          <p>A new lump in the breast or underarm</p>
+                                       </li>
+                                       <li>
+                                          <span class="flaticon-check"></span>
+                                          <p>Pain in any area of the breast</p>
+                                       </li>
+                                       <li>
+                                          <span class="flaticon-check"></span>
+                                          <p>Swelling of part of the breast </p>
+                                       </li>
+                                       <li>
+                                          <span class="flaticon-check"></span>
+                                          <p>Irritation or dimpling of breast skin</p>
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <div class="col-lg-6">
+                                    <ul>
+                                       <li>
+                                          <span class="flaticon-check"></span>
+                                          <p>Redness or flaky skin in the nipple area or the breast</p>
+                                       </li>
+                                       <li>
+                                          <span class="flaticon-check"></span>
+                                          <p>Nipple discharge other than breast milk, including blood</p>
+                                       </li>
+                                       <li>
+                                          <span class="flaticon-check"></span>
+                                          <p>Any change in the size or the shape of the breast</p>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                           <a href="/about" class="theme_btn tp_two">Read More</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section class="symptoms type_two">
+               <div class="container">
+                  <h2>How to help others.</h2><br>
+                  <div class="row">
+                     <div class="col-lg-6">
+                        <div class="row">
+                           <div class="col-lg-6">
+                              <div class="symptoms_box_two wow slideInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
+                                 <p>Maintain open communication</p>
+                              </div>
+                              <div class="symptoms_box_two wow slideInUp" data-wow-delay="100ms" data-wow-duration="1500ms">
+                                 <p> Be patient and flexible with your schedule</p>
+                              </div>
+                              <div class="symptoms_box_two wow slideInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+                                 <p>Organize a system of rides or tasks – for appointments, meals, etc.</p>
+                              </div>
+                              <div class="symptoms_box_two wow slideInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
+                                 <p>Create a support network with family and friends</p>
+                              </div>
+                           </div>
+                           <div class="col-lg-6">
+                              <div class="symptoms_box_two wow slideInUp" data-wow-delay="100ms" data-wow-duration="1500ms">
+                                 <p>Participate in a walk to raise money for a cure</p>
+                              </div>
+
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section class="explore_more two">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-lg-12">
+                        <div class="content_box text-center">
+                           <h1> Age increase the risk of breast cancer </h1>
+                           <h4>The older we are, the more likely abnormal changes will occur in our cells. When many of these changes occur, cancer can develop.</h4><br><br>
+                        <a href="/detection" class="theme_btn tp_two"> Predict Breast Cancer </a>
+                           </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section class="contact_form faq type_two">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-lg-6 col-md-12">
+                        <div class="contact_form_box type_two">
+                           <h2>Contact With Us</h2>
+                           <form>
+                              <div class="row">
+                                 <div class="col-lg-6 col-md-6">
+                                    <div class="form-group">
+                                       <label> Name</label>
+                                       <input type="text" name="form_name" placeholder="" class="form-control">
+                                    </div>
+                                 </div>
+                                 <div class="col-lg-6 col-md-6">
+                                    <div class="form-group"> <label> Email</label>
+                                       <input type="email" name="form_email" placeholder="" class="form-control">
+                                    </div>
+                                 </div>
+                                 <div class="col-lg-6 col-md-6">
+                                    <div class="form-group"> <label> Phone</label>
+                                       <input type="text" name="form_phone" placeholder="" class="form-control">
+                                    </div>
+                                 </div>
+                                 <div class="col-lg-6 col-md-6">
+                                    <div class="form-group">
+                                       <label>Country of Travel</label>
+                                       <select name="country" id="country">
+                                          <option selected="selected">Select Country</option>
+                                          <option>Australia</option>
+                                          <option>America</option>
+                                          <option>India</option>
+                                          <option>South Korea</option>
+                                          <option>North Korea</option>
+                                          <option>Japan</option>
+                                          <option>China</option>
+                                          <option>England</option>
+                                          <option>Netherland</option>
+                                       </select>
+                                    </div>
+                                 </div>
+                                 <div class="col-lg-12 col-md-12">
+                                    <div class="form-group"> <label> Message</label>
+                                       <textarea name="form_message" placeholder="" class="form-control textarea required" rows="3"></textarea>
+                                    </div>
+                                 </div>
+                                 <div class="col-lg-12 col-md-12">
+                                    <div class="lower_button_box">
+                                       <div class="row">
+                                          <div class="col-lg-5">
+                                             <div class="form-group text-right">
+                                                <button class="theme_btn tp_two" type="submit">Send Message</button>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </form>
+                        </div>
+                     </div>
+                     <div class="col-lg-6">
+                        <div class="faq_box_outer">
+                           <div class="heading tp_one">
+                              <h6>Faq"s</h6>
+                              <h1>Frequently Ask Questions</h1>
+                              <span class="flaticon-virus icon"></span>
+                           </div>
+                           <h2></h2>
+                           <div id="accordion">
+                              <div class="card faq_box type_two">
+                                 <div class="card-header" id="headingOne">
+                                    <h5 class="mb-0">
+                                       <button class="faq_btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                       <span class="flaticon-question-3 faq_icon"></span>  Can physical activity reduce the risk of breast cancer?
+                                       </button>
+                                    </h5>
+                                 </div>
+                                 <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                    <div class="card-body">
+                                     Exercise boosts the immune system and helps you to keep your weight in check. With as little as three hours of exercise per week, or about 30 minutes a day, a woman can begin to lower her risk of breast cancer. This doesn’t require going to a gym either. Power walking is more than sufficient
+                                       <!doctype html>
+                                       <html lang="en">
+                                       <head>
+                                          <meta charset="UTF-8">
+                                          <meta name="viewport"
+                                                content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+                                          <meta http-equiv="X-UA-Compatible" content="ie=edge">
+                                          <title>Document</title>
+                                       </head>
+                                       <body>
+                                       
+                                       </body>
+                                       </html>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="card faq_box type_two">
+                                 <div class="card-header" id="headingTwo">
+                                    <h5 class="mb-0">
+                                       <button class="faq_btn collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                       <span class="flaticon-question-3 faq_icon"></span>  Can a healthy diet help to prevent breast cancer?
+                                       </button>
+                                    </h5>
+                                 </div>
+                                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                    <div class="card-body">
+                                       A nutritious, low-fat diet (30 grams or less) with plenty of fruits and green and orange vegetables can help reduce the risk of developing breast cancer. A high-fat diet increases the risk because fat triggers estrogen production that can fuel tumor growth.
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="card faq_box type_two">
+                                 <div class="card-header" id="headingThree">
+                                    <h5 class="mb-0">
+                                       <button class="faq_btn collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                       <span class="flaticon-question-3 faq_icon"></span>  Does smoking cause breast cancer?
+                                       </button>
+                                    </h5>
+                                 </div>
+                                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                    <div class="card-body">
+                                       Smoking is a confirmed risk factor for many types of cancer. Recent research in the recent year has confirmed that smoking is a contributing risk factor for developing breast cancer. Additionally, second hand smoke is also a risk factor for cancer. So if you are a smoker, help yourself in a significant way and join a smoking cessation program to help you stop. The day you stop smoking the healing can begin and each week in which you are smoke-free, you give yourself increasing advantages for a healthier life. Smoking also directly contributes to heart and other lung diseases, too.
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="card faq_box type_two">
+                                 <div class="card-header" id="headingFours">
+                                    <h5 class="mb-0">
+                                       <button class="faq_btn collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                       <span class="flaticon-question-3 faq_icon"></span>    Are mammograms painful?
+                                       </button>
+                                    </h5>
+                                 </div>
+                                 <div id="collapseFour" class="collapse" aria-labelledby="headingFours" data-parent="#accordion">
+                                    <div class="card-body">
+                                       Mammography does compress the breasts and can sometimes cause slight discomfort for a very brief period of time. Patients who are sensitive should schedule their mammograms a week after their menstrual cycle so that the breasts are less tender. Your doctor may say it is fine to take acetaminophen an hour before the x-ray is performed to prevent discomfort too.
+                                       </div>
+                                 </div>
+                              </div>
+                              <div class="card faq_box type_two">
+                                 <div class="card-header" id="headingFive">
+                                    <h5 class="mb-0">
+                                       <button class="faq_btn collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                       <span class="flaticon-question-3 faq_icon"></span>    How often should I go to my doctor for a check-up?
+                                       </button>
+                                    </h5>
+                                 </div>
+                                 <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                                    <div class="card-body">
+                                       You should have a physical every year which should include a clinical breast exam and pelvic exam. If any unusual symptoms or changes in your breasts occur before your scheduled visit, do not hesitate to see the doctor immediately.
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="card faq_box type_two">
+                                 <div class="card-header" id="headingSix">
+                                    <h5 class="mb-0">
+                                       <button class="faq_btn collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                       <span class="flaticon-question-3 faq_icon"></span>   Can breastfeeding reduce the risk of breast cancer?
+                                       </button>
+                                    </h5>
+                                 </div>
+                                 <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                                    <div class="card-body">
+                                       Breastfeeding can reduce the risk of developing breast cancer.
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="card faq_box type_two">
+                                 <div class="card-header" id="headingSeven">
+                                    <h5 class="mb-0">
+                                       <button class="faq_btn collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                       <span class="flaticon-question-3 faq_icon"></span>        What celebrities have or have had breast cancer?
+                                       </button>
+                                    </h5>
+                                 </div>
+                                 <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+                                    <div class="card-body">
+                                       One in eight women will develop breast cancer at some point in her life. This statistic affects all women equally. You may have a one in eight chance of developing breast cancer, but so does your doctor…and your hairdresser…and the big-name actress in your favorite movie. Rich or poor, famous or unknown, the disease treats everyone the same.
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            {% include 'main/footer.html' %}
+            <!-------------main-centent-end--------------->
+         </main>
+         <!-------------pagewapper-end--------------->
+      </div>
+      <!--Scroll to top-->
+      <a href="#" id="scroll" class="default-bg" style="display: inline;"><span class="fa fa-angle-up"></span></a>
+      <!---------mbile-navbar----->
+      <div class="bsnav-mobile">
+         <div class="bsnav-mobile-overlay"></div>
+         <div class="navbar">
+            <button class="navbar-toggler toggler-spring mobile-toggler"><span class="fa fa-close"></span></button>
+         </div>
+      </div>
+      <!---------mbile-navbar----->
+      <!-- /.side-menu__block -->
+      {% include 'main/sidebar.html' %}
+      <!-- /.side-menu__block -->
+      <!-- /.search-popup -->
+      <div class="search-popup">
+         <div class="search-popup__overlay custom-cursor__overlay">
+            <div class="cursor"></div>
+            <div class="cursor-follower"></div>
+         </div>
+         <!-- /.search-popup__overlay -->
+         <div class="search-popup__inner">
+            <form action="#" class="search-popup__form">
+               <input type="text" name="search" placeholder="Type here to Search....">
+               <button type="submit"><i class="flaticon-magnifying-glass"></i></button>
+            </form>
+         </div>
+         <!-- /.search-popup__inner -->
+      </div>
+      <!-- /.search-popup -->
+      <!-----------------------------------script-------------------------------------->
+      <script src="{{ url_for('static',filename='assets/js/jquery.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/popper.min.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/bootstrap.min.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/bsnav.min.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/jquery-ui.js') }}"></script>
+
+      <script src="{{ url_for('static',filename='assets/js/owl.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/wow.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/jquery.fancybox.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/TweenMax.min.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/validator.min.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/appear.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/moment.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/jquery.flexslider-min.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/pagenav.js') }}"></script>
+      <script src="{{ url_for('static',filename='assets/js/custom.js') }}"></script>
+
+
+   </body>
+</html>
